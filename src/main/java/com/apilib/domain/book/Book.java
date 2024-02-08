@@ -20,7 +20,8 @@ public class Book {
 
     public Book(RequestBook requestBook) {
         this.name = requestBook.name();
-        this.name = requestBook.name();
-        this.name = requestBook.name();
+        this.description = requestBook.description();
+        this.image = requestBook.image();
+        this.active = true;
     }
 }

@@ -1,7 +1,6 @@
 CREATE TABLE book (
-    id INTEGER PRIMARY KEY UNIQUE NOT NULL,
+    id SERIAL PRIMARY KEY NOT NULL,
     name TEXT,
     description TEXT,
-    image TEXT,
-    active BOOL
+    image TEXT
 );

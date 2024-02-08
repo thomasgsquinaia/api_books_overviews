@@ -1,6 +1,13 @@
 package com.apilib.domain.book;
 
-public record RequestBook(String name, String description, String image, Boolean active)
-{
+import jakarta.validation.constraints.NotBlank;
+
+public record RequestBook(
+        Integer id,
+        String name,
+        String description,
+        String image,
+        Boolean active
+        ) {
 
 }
