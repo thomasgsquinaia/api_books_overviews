@@ -65,7 +65,7 @@ public class BooksController {
             book.setActive(false);
             return ResponseEntity.noContent().build();
         } else {
-            return ResponseEntity.noContent().build();
+            throw new EntityNotFoundException();
         }
     }
 
