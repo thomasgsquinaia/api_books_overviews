@@ -60,6 +60,7 @@ public class BooksController {
 
     @DeleteMapping("/{id}")
     @Transactional
+    @CrossOrigin(origins = "*")
     public ResponseEntity<Object> deleteBook(@PathVariable Integer id) {
         Optional<Book> optionalBook = repository.findById(id);
         if (optionalBook.isPresent()) {
